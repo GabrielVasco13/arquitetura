@@ -1,3 +1,4 @@
+import 'package:clean_arch/app/components/custom_switch_component.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,14 +16,11 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('Home page teste'),
       ),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Switch(
-              value: true,
-              onChanged: (value) {},
-            ),
+            CustomSwitchWidget(),
           ],
         ),
       ),
